@@ -1,8 +1,13 @@
 (function($){
+	var Defaults = {
+		skin: 'jqueryTab',
+		callback: function() {},
+		text:['tab1','tab2','tab3']
+	};
 	$.fn.extend({
-		//²å¼şÃû×Ö
+		//æ’ä»¶åå­—
 		tabs: function(options){
-			//²ÎÊıºÍÄ¬ÈÏÖµ
+			//å‚æ•°å’Œé»˜è®¤å€¼
 			var defaults = {
 				effect: 'scale'
 			},
@@ -27,7 +32,7 @@
 			});
 		},
 		tabsBg: function(options){
-			//²ÎÊıºÍÄ¬ÈÏÖµ
+			//å‚æ•°å’Œé»˜è®¤å€¼
 			var defaults = {
 				background: '#f5f5f5'
 			},
@@ -60,7 +65,7 @@ function init(){
 	firstdiv.css('height',firstdivheight+'px');
 	firstchild.addClass('tabulous_active');
 }
-//Ê¹ÓÃ²å¼ş
+//ä½¿ç”¨æ’ä»¶
 $(function() {
     $("#tabs").tabs({ effect: 'scale' });
 	$("#tabs2").tabsBg({ background: '#655c89' });	
