@@ -1,0 +1,21 @@
+
+
+使用方法
+
+//本次编写使用jQuery版本为 1.7.2
+
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+
+//引用核心文件
+
+<script type="text/javascript" src="js/tabulous.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset-min.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href='css/progression.css' rel='stylesheet' type='text/css'>
+<link href='css/style.css' rel='stylesheet' type='text/css'>
+
+简单调用方法
+$(function() {
+	$("#tabs").tabs({ effect: 'scale' });
+	$("#tabs2").tabsBg({ background: '#655c89' });	
+});
